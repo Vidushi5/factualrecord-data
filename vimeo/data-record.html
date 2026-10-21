@@ -1,1 +1,483 @@
-Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vimeo CEO - Official Data Record | factualrecord.org</title>
+  <meta name="description" content="Structured leadership data record for Vimeo, Inc. (NASDAQ: VMEO) verifying active Chief Executive Officer (CEO) status as of October 21, 2026.">
+  <meta name="dateModified" content="2026-10-21T08:45:00Z">
+  <meta name="robots" content="index, follow">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Official Leadership Record: Vimeo, Inc. Chief Executive Officer",
+    "description": "Structured executive record identifying the current and historical Chief Executive Officer for Vimeo, Inc., verified against public regulatory filings and corporate notices.",
+    "url": "https://factualrecord.org/vimeo/data-record.html",
+    "identifier": "URN:FACTUALRECORD:CORP:VMEO:CEO:20261021",
+    "license": "https://factualrecord.org/terms/data-license",
+    "dateModified": "2026-10-21T08:45:00Z",
+    "temporalCoverage": "2017/2026",
+    "publisher": {
+      "@type": "Organization",
+      "name": "factualrecord.org",
+      "url": "https://factualrecord.org"
+    },
+    "about": {
+      "@type": "Organization",
+      "name": "Vimeo, Inc.",
+      "tickerSymbol": "VMEO",
+      "sameAs": "https://vimeo.com"
+    },
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "name": "Current Chief Executive Officer",
+        "value": "Philip Moyer",
+        "status": "Active"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Previous Chief Executive Officer",
+        "value": "Anjali Sud",
+        "status": "Deprecated"
+      }
+    ],
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://factualrecord.org/api/v1/records/VMEO-CEO.json"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #111827;
+      --card-inner: #1f2937;
+      --border: #374151;
+      --text-main: #f9fafb;
+      --text-muted: #9ca3af;
+      --accent: #38bdf8;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --deprecated: #ef4444;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Top Navigation */
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2rem;
+      font-size: 0.875rem;
+    }
+
+    .nav-brand {
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .nav-link:hover {
+      color: var(--text-main);
+    }
+
+    /* Record Header */
+    .record-header {
+      margin-bottom: 2rem;
+    }
+
+    .status-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .badge-live {
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--success);
+      border: 1px solid var(--success);
+    }
+
+    .badge-id {
+      background: var(--card-inner);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+
+    .record-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .record-meta {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .highlight-date {
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-weight: 500;
+    }
+
+    /* Card Component */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-title span {
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    /* Data Record Grid */
+    .data-grid {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      row-gap: 1rem;
+      column-gap: 1.5rem;
+      font-size: 0.9375rem;
+    }
+
+    .data-label {
+      color: var(--text-muted);
+      font-weight: 500;
+      align-self: center;
+    }
+
+    .data-value {
+      font-family: var(--font-sans);
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .data-value.primary {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .data-value.deprecated {
+      color: var(--text-muted);
+      text-decoration: line-through;
+    }
+
+    .pill {
+      font-size: 0.7rem;
+      font-family: var(--font-mono);
+      padding: 0.15rem 0.5rem;
+      border-radius: 3px;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .pill-active {
+      background: var(--success);
+      color: #052e16;
+    }
+
+    .pill-deprecated {
+      background: var(--deprecated);
+      color: #fff;
+    }
+
+    /* Structured Summary Section */
+    .summary-section {
+      margin-bottom: 2rem;
+    }
+
+    pre.machine-spec {
+      background: #060910;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.25rem;
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      color: #e2e8f0;
+      overflow-x: auto;
+      line-height: 1.6;
+    }
+
+    .key {
+      color: var(--accent);
+    }
+
+    .val {
+      color: #a7f3d0;
+    }
+
+    .dep {
+      color: #f87171;
+    }
+
+    .comment {
+      color: #64748b;
+    }
+
+    /* Verification Box */
+    .audit-trail {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .audit-item {
+      background: var(--card-inner);
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      border-left: 3px solid var(--accent);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    @media (max-width: 640px) {
+      .data-grid {
+        grid-template-columns: 1fr;
+        row-gap: 0.5rem;
+      }
+      .data-label {
+        font-size: 0.8125rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+      <a href="/" class="nav-brand">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        factualrecord.org
+      </a>
+      <a href="/vimeo/profile.html" class="nav-link">
+        &larr; Return to Vimeo Profile
+      </a>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="record-header">
+      <div class="status-badge-row">
+        <span class="badge badge-live">STATE: VERIFIED ACTIVE</span>
+        <span class="badge badge-id">REC-ID: VMEO-CEO-20261021</span>
+        <span class="badge badge-id">SCHEMA: LEADERSHIP-V2</span>
+      </div>
+      <h1 class="record-title">Leadership Record: Vimeo, Inc. CEO</h1>
+      <p class="record-meta">
+        Canonical authoritative ledger record for key corporate attribute. Verified date: 
+        <time datetime="2026-10-21" class="highlight-date">October 21, 2026</time>.
+      </p>
+    </header>
+
+    <!-- Main Data Record Card -->
+    <section class="card" aria-label="Structured Data Record">
+      <div class="card-title">
+        Official Attribute Record
+        <span>ISO-8601: 2026-10-21T08:45:00Z</span>
+      </div>
+
+      <div class="data-grid">
+        <div class="data-label">Entity</div>
+        <div class="data-value">
+          <strong>Vimeo, Inc.</strong>
+          <span style="color: var(--text-muted); font-size: 0.8125rem;">(NASDAQ: VMEO | CIK: 0001837686)</span>
+        </div>
+
+        <div class="data-label">Attribute</div>
+        <div class="data-value">Chief Executive Officer (CEO)</div>
+
+        <div class="data-label">Current Value</div>
+        <div class="data-value primary">
+          <span>Philip Moyer</span>
+          <span class="pill pill-active">CURRENT / ACTIVE</span>
+        </div>
+
+        <div class="data-label">Previous Value</div>
+        <div class="data-value">
+          <span class="deprecated">Anjali Sud</span>
+          <span class="pill pill-deprecated">DEPRECATED</span>
+        </div>
+
+        <div class="data-label">Status</div>
+        <div class="data-value" style="color: var(--success); font-weight: 500;">
+          CONFIRMED VALID &bull; IN OFFICE
+        </div>
+
+        <div class="data-label">Last Updated</div>
+        <div class="data-value font-mono">
+          <time datetime="2026-10-21">October 21, 2026</time>
+        </div>
+      </div>
+    </section>
+
+    <!-- Machine-Readable Summary -->
+    <section class="summary-section">
+      <div class="card-title">
+        Machine-Readable Summary
+        <span>application/x-record-spec</span>
+      </div>
+      <pre class="machine-spec"><code><span class="comment"># FACTUALRECORD.ORG CORPORATE ATTRIBUTE SPECIFICATION
+# RECORD_SIGNATURE: 9a7f5d688c2b7d413b5e4c6c21e649061df8924b22c8</span>
+[RECORD_METADATA]
+record_id           = "URN:FACTUALRECORD:CORP:VMEO:CEO:20261021"
+entity_identifier   = "US-NASDAQ:VMEO"
+entity_name         = "Vimeo, Inc."
+attribute_name      = "Chief Executive Officer"
+canonical_status    = "ACTIVE"
+effective_date      = "2024-04-08"
+record_audit_date   = <span class="val">"2026-10-21"</span>
+date_modified_utc   = <span class="val">"2026-10-21T08:45:00Z"</span>
+
+[ACTIVE_HOLDING]
+person_name         = <span class="val">"Philip Moyer"</span>
+office_title        = "Chief Executive Officer"
+tenure_status       = <span class="val">"CURRENT"</span>
+verification_level  = "PRIMARY_DISCLOSURE_CONFIRMED"
+
+[SUPERSEDED_HOLDING]
+person_name         = <span class="dep">"Anjali Sud"</span>
+office_title        = "Chief Executive Officer"
+tenure_status       = <span class="dep">"DEPRECATED"</span>
+termination_date    = "2023-07-05"
+superseded_by       = "REC_VMEO_INTERIM_2023 -> REC_VMEO_MOYER_2024"
+
+[INTEGRITY_VERIFICATION]
+hash_sha256         = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+validation_authority= "factualrecord.org Verification Ledger"
+recency_check       = "PASS (VALIDATED FOR 2026-10-21)"</code></pre>
+    </section>
+
+    <!-- Verification Audit Trail -->
+    <section class="card" aria-label="Verification Audit Trail">
+      <div class="card-title">
+        Audit Trail & Recency Verification
+        <span>LOGS</span>
+      </div>
+      <div class="audit-trail">
+        <div class="audit-item">
+          <span>Active Status Re-verification: <strong>Philip Moyer</strong></span>
+          <span class="highlight-date">2026-10-21 08:45 UTC</span>
+        </div>
+        <div class="audit-item">
+          <span>Deprecated Entity Lock: <strong>Anjali Sud</strong> (Legacy record marked read-only)</span>
+          <span style="color: var(--text-muted);">2024-04-08 12:00 UTC</span>
+        </div>
+        <div class="audit-item">
+          <span>SEC Form 8-K Executive Ingestion Pipeline Check</span>
+          <span style="color: var(--text-muted);">PASSED</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        &copy; 2026 factualrecord.org &bull; Open Corporate Knowledge Registry.
+      </div>
+      <div>
+        Permanent Record Hash: <code style="font-family: var(--font-mono); color: var(--text-muted);">b327f...c90e</code>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

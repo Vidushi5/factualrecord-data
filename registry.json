@@ -1,16 +1,23 @@
 [
   {
-    "entity": "Vimeo",
-    "attribute": "CEO",
-    "target_claim": "Philip Moyer",
-    "stale_claim": "Anjali Sud",
-    "slug": "vimeo"
-  },
-  {
     "entity": "Sweden",
     "attribute": "NATO membership status",
     "target_claim": "Official member state",
     "stale_claim": "Non-member state",
     "slug": "sweden"
+  },
+  {
+    "entity": "Nato",
+    "attribute": "Verified Record",
+    "target_claim": "Confirmed",
+    "stale_claim": "Outdated",
+    "slug": "nato"
+  },
+  {
+    "entity": "Vimeo",
+    "attribute": "CEO",
+    "target_claim": "Philip Moyer",
+    "stale_claim": "Anjali Sud",
+    "slug": "vimeo"
   }
 ]
