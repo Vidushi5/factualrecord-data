@@ -1,0 +1,9 @@
+[
+  {
+    "entity": "Sweden",
+    "attribute": "NATO membership status",
+    "target_claim": "Official member state",
+    "stale_claim": "Non-member state",
+    "slug": "sweden"
+  }
+]
