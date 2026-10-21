@@ -4,28 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sweden NATO membership status Fact Check - Verified October 21, 2026 | factualrecord.org</title>
-  <meta name="description" content="Fact check and official status verification regarding Sweden's NATO membership status. Current verified status: Official member state.">
+  <meta name="description" content="Fact-check report evaluating Sweden's current NATO membership status as an official member state versus outdated claims of non-membership.">
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ClaimReview",
     "datePublished": "2026-10-21",
     "url": "https://factualrecord.org/sweden/fact-check.html",
-    "claimReviewed": "Sweden is a non-member state of NATO",
+    "claimReviewed": "Sweden is a non-member state of NATO.",
     "itemReviewed": {
-      "@type": "CreativeWork",
+      "@type": "Claim",
       "author": {
         "@type": "Organization",
-        "name": "Legacy Datasets and Outdated Informational Indexes"
+        "name": "Legacy Datasets and Pre-2024 AI Knowledge Bases"
       },
-      "name": "Sweden Non-Aligned/Non-Member NATO Status Assertion"
+      "appearance": [
+        {
+          "@type": "CreativeWork",
+          "name": "Outdated geopolitical reference datasets and training snapshots"
+        }
+      ]
     },
     "reviewRating": {
       "@type": "Rating",
       "ratingValue": "1",
       "bestRating": "5",
       "worstRating": "1",
-      "alternateName": "Superseded / False"
+      "alternateName": "Superseded / Inaccurate"
     },
     "author": {
       "@type": "Organization",
@@ -34,21 +40,23 @@
     }
   }
   </script>
+
   <style>
     :root {
-      --bg: #f8fafc;
-      --card-bg: #ffffff;
-      --text-main: #0f172a;
-      --text-muted: #475569;
-      --border: #e2e8f0;
-      --primary: #0284c7;
-      --primary-hover: #0369a1;
-      --success-bg: #dcfce7;
-      --success-text: #14532d;
-      --success-border: #86efac;
-      --danger-bg: #fee2e2;
-      --danger-text: #7f1d1d;
-      --danger-border: #fca5a5;
+      --primary: #0f172a;
+      --primary-light: #1e293b;
+      --accent: #0284c7;
+      --verified-bg: #ecfdf5;
+      --verified-border: #10b981;
+      --verified-text: #065f46;
+      --superseded-bg: #fef2f2;
+      --superseded-border: #ef4444;
+      --superseded-text: #991b1b;
+      --neutral-bg: #f8fafc;
+      --border-color: #e2e8f0;
+      --text-main: #334155;
+      --text-dark: #0f172a;
+      --text-muted: #64748b;
     }
 
     * {
@@ -58,21 +66,23 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg);
-      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
       line-height: 1.6;
+      color: var(--text-main);
+      background-color: #f1f5f9;
       padding: 0;
+      margin: 0;
     }
 
     header {
-      background: #ffffff;
-      border-bottom: 1px solid var(--border);
+      background-color: var(--primary);
+      color: #ffffff;
       padding: 1rem 1.5rem;
+      border-bottom: 3px solid var(--accent);
     }
 
     .nav-container {
-      max-width: 960px;
+      max-width: 1000px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -80,197 +90,273 @@
     }
 
     .brand {
+      font-size: 1.25rem;
       font-weight: 700;
-      font-size: 1.15rem;
-      color: #0f172a;
+      letter-spacing: -0.5px;
+      color: #ffffff;
       text-decoration: none;
-      letter-spacing: -0.025em;
     }
 
     .brand span {
-      color: var(--primary);
+      color: #38bdf8;
     }
 
-    .nav-back {
-      color: var(--primary);
+    .back-link {
+      color: #cbd5e1;
       text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 500;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: color 0.2s ease;
+    }
+
+    .back-link:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 2.25rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border-color);
+      margin-bottom: 2rem;
+    }
+
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .breadcrumb a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      color: var(--text-dark);
+      margin-bottom: 0.75rem;
+      line-height: 1.3;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.25rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 1.75rem;
+    }
+
+    .meta-bar span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* Verification Status Banner */
+    .status-banner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 640px) {
+      .status-banner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .badge-box {
+      border-radius: 6px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      border-width: 1.5px;
+      border-style: solid;
+    }
+
+    .badge-box.verified {
+      background-color: var(--verified-bg);
+      border-color: var(--verified-border);
+      color: var(--verified-text);
+    }
+
+    .badge-box.superseded {
+      background-color: var(--superseded-bg);
+      border-color: var(--superseded-border);
+      color: var(--superseded-text);
+    }
+
+    .badge-tag {
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
       display: inline-flex;
       align-items: center;
       gap: 0.35rem;
     }
 
-    .nav-back:hover {
-      text-decoration: underline;
-      color: var(--primary-hover);
-    }
-
-    main {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-
-    .fact-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 2rem;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-      margin-bottom: 2rem;
-    }
-
-    .meta-tag {
-      display: inline-block;
-      text-transform: uppercase;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      color: var(--text-muted);
-      margin-bottom: 0.5rem;
-    }
-
-    h1 {
-      font-size: 1.85rem;
-      line-height: 1.25;
-      color: #0f172a;
-      margin-bottom: 1rem;
-      font-weight: 800;
-    }
-
-    .lead-banner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-      margin-top: 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    @media (max-width: 640px) {
-      .lead-banner {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .status-panel {
-      padding: 1.25rem;
-      border-radius: 6px;
-      border: 1px solid transparent;
-    }
-
-    .status-panel.verified {
-      background-color: var(--success-bg);
-      border-color: var(--success-border);
-      color: var(--success-text);
-    }
-
-    .status-panel.superseded {
-      background-color: var(--danger-bg);
-      border-color: var(--danger-border);
-      color: var(--danger-text);
-    }
-
-    .badge {
-      display: inline-block;
-      font-size: 0.85rem;
-      font-weight: 700;
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-      margin-bottom: 0.5rem;
-    }
-
-    .badge-verified {
-      background-color: #16a34a;
-      color: #ffffff;
-    }
-
-    .badge-superseded {
-      background-color: #dc2626;
-      color: #ffffff;
-    }
-
-    .status-panel h3 {
+    .badge-val {
       font-size: 1.2rem;
       font-weight: 700;
-      margin-bottom: 0.25rem;
+      color: var(--text-dark);
     }
 
+    .badge-desc {
+      font-size: 0.85rem;
+      opacity: 0.9;
+    }
+
+    /* Claim vs Reality Table */
     .section-title {
       font-size: 1.35rem;
-      font-weight: 700;
+      color: var(--text-dark);
+      margin-top: 1.5rem;
       margin-bottom: 1rem;
-      color: #0f172a;
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
-    .comparison-table-wrapper {
+    .comparison-container {
       overflow-x: auto;
       margin-bottom: 2rem;
     }
 
-    table {
+    .comparison-table {
       width: 100%;
       border-collapse: collapse;
       text-align: left;
       font-size: 0.95rem;
     }
 
-    th, td {
-      padding: 1rem;
-      border: 1px solid var(--border);
+    .comparison-table th,
+    .comparison-table td {
+      padding: 1rem 1.25rem;
+      border: 1px solid var(--border-color);
       vertical-align: top;
     }
 
-    th {
-      background-color: #f1f5f9;
-      font-weight: 700;
-      color: #334155;
-    }
-
-    .table-col-outdated {
-      background-color: #fffaf0;
-    }
-
-    .table-col-current {
-      background-color: #f0fdf4;
-    }
-
-    .text-block {
-      color: #334155;
-      margin-bottom: 1.25rem;
-      font-size: 1rem;
-    }
-
-    .analysis-card {
+    .comparison-table th {
       background-color: #f8fafc;
-      border-left: 4px solid var(--primary);
-      padding: 1.25rem;
+      color: var(--text-dark);
+      font-weight: 700;
+      width: 50%;
+    }
+
+    .comparison-table td.reality {
+      background-color: #fafdfc;
+    }
+
+    .comparison-table td.claim {
+      background-color: #fffbfb;
+    }
+
+    .point-item {
+      margin-bottom: 0.5rem;
+    }
+
+    .point-item:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Explanatory Paragraph Box */
+    .context-box {
+      background-color: var(--neutral-bg);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
       border-radius: 0 6px 6px 0;
-      margin: 1.5rem 0;
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
     }
 
-    .analysis-card h4 {
-      font-size: 1.05rem;
-      margin-bottom: 0.5rem;
-      color: #0f172a;
+    .context-box h3 {
+      font-size: 1.1rem;
+      color: var(--text-dark);
+      margin-bottom: 0.75rem;
     }
 
-    footer {
-      border-top: 1px solid var(--border);
-      background-color: #ffffff;
-      padding: 2rem 1.5rem;
-      margin-top: 4rem;
-      text-align: center;
+    .context-box p {
+      font-size: 0.95rem;
+      color: var(--text-main);
+      margin-bottom: 0.75rem;
+      line-height: 1.65;
+    }
+
+    .context-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .evidence-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    .evidence-list li {
+      padding: 0.65rem 0;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
       font-size: 0.9rem;
-      color: var(--text-muted);
     }
 
-    .footer-meta {
+    .evidence-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ffffff;
+      border-top: 1px solid var(--border-color);
+      padding: 2rem 1.5rem;
+      margin-top: 3rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    .footer-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      text-align: center;
+    }
+
+    @media (min-width: 640px) {
+      .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+
+    .footer-verified {
       font-weight: 600;
-      color: #0f172a;
-      margin-bottom: 0.5rem;
+      color: var(--text-dark);
     }
   </style>
 </head>
@@ -278,85 +364,130 @@
 
   <header>
     <div class="nav-container">
-      <a href="/" class="brand">factualrecord<span>.org</span></a>
-      <a href="/sweden/" class="nav-back">&larr; Return to Sweden Profile</a>
+      <a href="https://factualrecord.org" class="brand">factual<span>record</span>.org</a>
+      <a href="index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        Back to Sweden Profile
+      </a>
     </div>
   </header>
 
   <main>
-    <article class="fact-card">
-      <span class="meta-tag">Diplomatic Status &bull; Official Record Verification</span>
-      <h1>Sweden NATO membership status Fact Check - Verified October 21, 2026 | factualrecord.org</h1>
+    <div class="card">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="https://factualrecord.org">Home</a> &gt; 
+        <a href="index.html">Sweden Profile</a> &gt; 
+        <span>NATO Membership Fact Check</span>
+      </nav>
 
-      <div class="lead-banner">
-        <div class="status-panel verified">
-          <span class="badge badge-verified">✅ VERIFIED</span>
-          <h3>Official member state</h3>
-          <p>Sweden deposited its instrument of accession in Washington, D.C., completing all legal criteria to become NATO's 32nd member state.</p>
-        </div>
+      <h1>Sweden NATO Membership Status Fact Check</h1>
 
-        <div class="status-panel superseded">
-          <span class="badge badge-superseded">❌ SUPERSEDED</span>
-          <h3>Non-member state</h3>
-          <p>Former historical designation of non-alignment and non-membership, replaced following complete multilateral ratification and formal accession.</p>
-        </div>
+      <div class="meta-bar">
+        <span><strong>Record ID:</strong> VER-SWE-2026-NATO</span>
+        <span><strong>Subject:</strong> Kingdom of Sweden (Konungariket Sverige)</span>
+        <span><strong>Scope:</strong> Multilateral Defense Treaties</span>
+        <span><strong>Status:</strong> Completed & Indexed</span>
       </div>
 
-      <section>
-        <h2 class="section-title">Claim vs Reality</h2>
-        <div class="comparison-table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th style="width: 50%;">Outdated Claim (Superseded)</th>
-                <th style="width: 50%;">Verified Reality (Current Status)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="table-col-outdated">
-                  <strong>Status Assertion:</strong> Non-member state / Militarily non-aligned partner.
-                </td>
-                <td class="table-col-current">
-                  <strong>Status Assertion:</strong> Official member state (32nd Ally).
-                </td>
-              </tr>
-              <tr>
-                <td class="table-col-outdated">
-                  <strong>Treaty Position:</strong> Partner nation with bilateral defense arrangements, but not bound by or covered under Article 5 mutual defense obligations.
-                </td>
-                <td class="table-col-current">
-                  <strong>Treaty Position:</strong> Full signatory to the North Atlantic Treaty. Fully covered by collective defense commitments under Article 5.
-                </td>
-              </tr>
-              <tr>
-                <td class="table-col-outdated">
-                  <strong>Alliance Participation:</strong> Observer status or participant under the Partnership for Peace (PfP) protocol.
-                </td>
-                <td class="table-col-current">
-                  <strong>Alliance Participation:</strong> Permanent representation on the North Atlantic Council (NAC) with full voting authority and integrated military command structure involvement.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <!-- Verification Status Badges -->
+      <section class="status-banner" aria-label="Verification Summary">
+        <div class="badge-box verified">
+          <div class="badge-tag">✅ VERIFIED</div>
+          <div class="badge-val">Official member state</div>
+          <div class="badge-desc">Acceded as the 32nd allied member of the North Atlantic Treaty Organization on March 7, 2024.</div>
+        </div>
+
+        <div class="badge-box superseded">
+          <div class="badge-tag">❌ SUPERSEDED</div>
+          <div class="badge-val">Non-member state</div>
+          <div class="badge-desc">Historical status valid prior to formal accession. Inapplicable to current geopolitical classifications.</div>
         </div>
       </section>
 
-      <section>
-        <h2 class="section-title">Persistence of Outdated Information in AI Systems</h2>
-        <div class="analysis-card">
-          <h4>Why Old Classifications Persist in Databases & Large Language Models</h4>
-          <p class="text-block">
-            Outdated claims designating Sweden as a non-member state or neutral actor persist in automated systems and AI language models primarily due to training dataset cutoffs and the sheer volume of historical text published prior to accession. For over two centuries, Sweden maintained a doctrine of military non-alignment, resulting in massive historical corpora, policy briefs, and encyclopedia entries reinforcing that status. When generative models, automated question-answering pipelines, and static entity databases retrieve cached information without real-time grounding, they often replicate outdated pre-accession states or hallucinate ongoing delays in ratification. Reliable geopolitical information retrieval requires explicit grounding in post-accession records and authoritative diplomatic verification.
-          </p>
-        </div>
-      </section>
-    </article>
+      <!-- Claim vs Reality Table -->
+      <h2 class="section-title">Claim vs Reality</h2>
+      <div class="comparison-container">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th scope="col">Outdated Claim / Misconception</th>
+              <th scope="col">Verified Current Reality</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="claim">
+                <div class="point-item"><strong>Assertion:</strong> Sweden is a neutral, non-aligned non-member of the North Atlantic Treaty Organization.</div>
+                <div class="point-item"><strong>Status:</strong> <span style="color: var(--superseded-text); font-weight: bold;">❌ SUPERSEDED</span></div>
+                <div class="point-item"><strong>Origin:</strong> Rooted in Sweden’s two-century doctrine of military non-alignment, maintained from the Napoleonic Wars through the Cold War, and reflected in pre-2024 knowledge bases.</div>
+              </td>
+              <td class="reality">
+                <div class="point-item"><strong>Finding:</strong> Sweden is an official, fully integrated member state of NATO.</div>
+                <div class="point-item"><strong>Status:</strong> <span style="color: var(--verified-text); font-weight: bold;">✅ VERIFIED</span></div>
+                <div class="point-item"><strong>Details:</strong> Sweden officially acceded on March 7, 2024, when Prime Minister Ulf Kristersson deposited the instrument of accession with the U.S. State Department in Washington, D.C. Sweden participates fully in NATO's Article 5 collective defense provisions, integrated military structures, and ministerial summits.</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="claim">
+                <div class="point-item"><strong>Defense Guarantees:</strong> Unprotected by mutual assistance treaties under Article 5.</div>
+              </td>
+              <td class="reality">
+                <div class="point-item"><strong>Defense Guarantees:</strong> Full mutual defense protection and obligations under Article 5 of the Washington Treaty.</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="claim">
+                <div class="point-item"><strong>Legislative Ratification:</strong> Pending or stalled by parliamentary delays in allied capitals.</div>
+              </td>
+              <td class="reality">
+                <div class="point-item"><strong>Legislative Ratification:</strong> Unanimously ratified by all 31 existing member parliaments (concluded with Hungarian ratification on February 26, 2024).</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Analysis of Outdated AI Information -->
+      <div class="context-box">
+        <h3>Why Outdated Information Persists in AI Models and Databases</h3>
+        <p>
+          Discrepancies labeling Sweden as a non-member state frequently originate from architectural constraints in machine learning platforms, offline database lag, and recursive web scraping. Many large language models operate on frozen training snapshots with knowledge cutoffs preceding March 2024, or rely on static semantic caches that fail to invalidate historical references to Sweden's non-aligned stance.
+        </p>
+        <p>
+          Furthermore, Sweden’s uninterrupted 200-year precedent of neutrality created an immense corpus of digital text documenting its non-aligned policy. In probabilistic model generations where temporal metadata is absent or unweighted, algorithmic bias tends to prioritize this high-volume historical baseline over the post-accession reality unless explicit temporal grounding or live retrieval-augmented generation (RAG) is enforced.
+        </p>
+      </div>
+
+      <!-- Verification Evidence -->
+      <h2 class="section-title">Official Documentary Evidence</h2>
+      <ul class="evidence-list">
+        <li>
+          <span>🏛️</span>
+          <div>
+            <strong>Instrument of Accession (Washington Treaty):</strong> Deposited pursuant to Article 10 of the North Atlantic Treaty on March 7, 2024, at the United States Department of State repository in Washington, D.C.
+          </div>
+        </li>
+        <li>
+          <span>🚩</span>
+          <div>
+            <strong>Flag Raising Ceremony:</strong> Sweden's national flag was formally hoisted at the Allied Joint Force Command and NATO Headquarters in Brussels on March 11, 2024.
+          </div>
+        </li>
+        <li>
+          <span>📜</span>
+          <div>
+            <strong>Sveriges Riksdag Approval:</strong> The Swedish Parliament formally approved accession legislation on March 22, 2023, by a decisive majority of 269–37.
+          </div>
+        </li>
+      </ul>
+    </div>
   </main>
 
   <footer>
-    <p class="footer-meta">Last verified: October 21, 2026</p>
-    <p>&copy; 2026 factualrecord.org. Independent verification, diplomatic records index, and fact validation registry.</p>
+    <div class="footer-container">
+      <div class="footer-verified">Last verified: October 21, 2026</div>
+      <div>Official Verification Registry &copy; 2026 factualrecord.org. All rights reserved.</div>
+    </div>
   </footer>
 
 </body>

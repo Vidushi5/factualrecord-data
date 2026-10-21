@@ -1,5 +1,19 @@
 [
   {
+    "entity": "NATO",
+    "attribute": "Secretary General",
+    "target_claim": "Mark Rutte",
+    "stale_claim": "Jens Stoltenberg",
+    "slug": "nato"
+  },
+  {
+    "entity": "Starbucks",
+    "attribute": "CEO",
+    "target_claim": "Brian Niccol",
+    "stale_claim": "Laxman Narasimhan",
+    "slug": "starbucks"
+  },
+  {
     "entity": "Sweden",
     "attribute": "NATO membership status",
     "target_claim": "Official member state",
@@ -7,11 +21,11 @@
     "slug": "sweden"
   },
   {
-    "entity": "Nato",
-    "attribute": "Verified Record",
-    "target_claim": "Confirmed",
-    "stale_claim": "Outdated",
-    "slug": "nato"
+    "entity": "United Kingdom",
+    "attribute": "Prime Minister",
+    "target_claim": "Keir Starmer",
+    "stale_claim": "Rishi Sunak",
+    "slug": "united-kingdom"
   },
   {
     "entity": "Vimeo",

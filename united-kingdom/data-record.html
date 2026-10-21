@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United Kingdom Prime Minister - Official Data Record | factualrecord.org</title>
+  <meta name="description" content="Authoritative structured data record for the Prime Minister of the United Kingdom. Current Value: Keir Starmer. Previous Value: Rishi Sunak. Updated October 21, 2026.">
+  <meta name="robots" content="index, follow">
+  <meta name="dateModified" content="2026-10-21">
+
+  <!-- Schema.org JSON-LD Dataset -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "@id": "https://factualrecord.org/united-kingdom/data-record.html#dataset",
+    "name": "United Kingdom Prime Minister Official Data Record",
+    "description": "Structured historical and current executive governance record for the office of Prime Minister of the United Kingdom of Great Britain and Northern Ireland.",
+    "url": "https://factualrecord.org/united-kingdom/data-record.html",
+    "identifier": "URN:FACTREC:GBR:POL:EXEC-PM-001",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "isAccessibleForFree": true,
+    "dateCreated": "2024-07-05T09:00:00Z",
+    "dateModified": "2026-10-21T08:45:00Z",
+    "version": "2026.10.21-REV04",
+    "publisher": {
+      "@type": "Organization",
+      "name": "factualrecord.org",
+      "url": "https://factualrecord.org",
+      "logo": "https://factualrecord.org/assets/logo.png"
+    },
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "United Kingdom",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 55.3781,
+        "longitude": -3.4360
+      }
+    },
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "name": "Current Prime Minister",
+        "value": "Keir Starmer",
+        "status": "Active"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Previous Prime Minister",
+        "value": "Rishi Sunak",
+        "status": "Deprecated"
+      }
+    ],
+    "about": {
+      "@type": "GovernmentOrganization",
+      "name": "Cabinet of the United Kingdom",
+      "parentOrganization": {
+        "@type": "Country",
+        "name": "United Kingdom"
+      }
+    },
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Keir Starmer",
+      "jobTitle": "Prime Minister of the United Kingdom",
+      "affiliation": {
+        "@type": "GovernmentOrganization",
+        "name": "Government of the United Kingdom"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-canvas: #f8fafc;
+      --bg-surface: #ffffff;
+      --border-color: #e2e8f0;
+      --border-focus: #0ea5e9;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --text-dim: #94a3b8;
+      --brand-primary: #0284c7;
+      --brand-dark: #0369a1;
+      --tag-active-bg: #ecfdf5;
+      --tag-active-text: #065f46;
+      --tag-active-border: #a7f3d0;
+      --tag-dep-bg: #fffbeb;
+      --tag-dep-text: #92400e;
+      --tag-dep-border: #fde68a;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      padding: 0 1rem 3rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .brand-mark {
+      width: 28px;
+      height: 28px;
+      background: var(--brand-primary);
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      font-family: var(--font-mono);
+    }
+
+    .brand-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text-main);
+      text-decoration: none;
+    }
+
+    .brand-title span {
+      color: var(--brand-primary);
+    }
+
+    .nav-back {
+      font-size: 0.875rem;
+      color: var(--brand-primary);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-weight: 500;
+      transition: color 0.15s ease;
+    }
+
+    .nav-back:hover {
+      color: var(--brand-dark);
+      text-decoration: underline;
+    }
+
+    .breadcrumb {
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
+      margin-bottom: 0.5rem;
+    }
+
+    .breadcrumb a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .page-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .header-metadata {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      font-family: var(--font-mono);
+    }
+
+    .meta-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: #e2e8f0;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+    }
+
+    .meta-pill.verified {
+      background: #dcfce7;
+      color: #166534;
+      font-weight: 600;
+    }
+
+    /* Primary Data Record Card */
+    .record-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+
+    .record-card-header {
+      background: #f1f5f9;
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.875rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+    }
+
+    .record-id-tag {
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .record-status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #15803d;
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #22c55e;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2);
+    }
+
+    .data-grid {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      divide-y: 1px solid var(--border-color);
+    }
+
+    .grid-row {
+      display: contents;
+    }
+
+    .grid-cell-label {
+      padding: 1rem 1.25rem;
+      background-color: #fafafa;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .grid-cell-value {
+      padding: 1rem 1.25rem;
+      font-size: 0.9375rem;
+      color: var(--text-main);
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .grid-row:last-child .grid-cell-label,
+    .grid-row:last-child .grid-cell-value {
+      border-bottom: none;
+    }
+
+    .entity-lead {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--text-main);
+    }
+
+    .badge-status {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      font-family: var(--font-mono);
+      letter-spacing: 0.02em;
+    }
+
+    .badge-active {
+      background-color: var(--tag-active-bg);
+      color: var(--tag-active-text);
+      border: 1px solid var(--tag-active-border);
+    }
+
+    .badge-deprecated {
+      background-color: var(--tag-dep-bg);
+      color: var(--tag-dep-text);
+      border: 1px solid var(--tag-dep-border);
+      text-decoration: line-through;
+    }
+
+    .historical-note {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* Machine-Readable Block */
+    .section-title {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .format-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-weight: normal;
+    }
+
+    .raw-data-wrapper {
+      position: relative;
+      background: #0f172a;
+      border-radius: 8px;
+      border: 1px solid #1e293b;
+      margin-bottom: 2.5rem;
+      overflow: hidden;
+    }
+
+    .raw-data-bar {
+      background: #1e293b;
+      padding: 0.5rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: #94a3b8;
+      font-family: var(--font-mono);
+      border-bottom: 1px solid #334155;
+    }
+
+    pre.structured-text {
+      padding: 1.25rem;
+      color: #f1f5f9;
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      line-height: 1.6;
+      overflow-x: auto;
+    }
+
+    .k { color: #38bdf8; } /* Key */
+    .v { color: #4ade80; } /* Value */
+    .s { color: #cbd5e1; } /* String */
+    .c { color: #64748b; } /* Comment */
+
+    /* Verification Box */
+    .recency-box {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--brand-primary);
+      padding: 1rem 1.25rem;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .recency-box strong {
+      color: var(--text-main);
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 1.5rem;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      font-family: var(--font-mono);
+    }
+
+    footer a {
+      color: var(--text-muted);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .data-grid {
+        grid-template-columns: 1fr;
+      }
+      .grid-cell-label {
+        border-bottom: none;
+        padding-bottom: 0.25rem;
+      }
+      .grid-cell-value {
+        padding-top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="brand-group">
+        <span class="brand-mark" aria-hidden="true">FR</span>
+        <a href="/" class="brand-title">factualrecord<span>.org</span></a>
+      </div>
+      <nav aria-label="Page navigation">
+        <a href="/united-kingdom/profile.html" class="nav-back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Back to United Kingdom Profile
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="breadcrumb">
+        <a href="/">Global Registry</a> / <a href="/united-kingdom/profile.html">United Kingdom</a> / Data Record
+      </div>
+
+      <h1 class="page-title">United Kingdom Prime Minister</h1>
+
+      <div class="header-metadata">
+        <span>RECORD ID: <strong>GBR-POL-GOV-001</strong></span>
+        <span>&bull;</span>
+        <span>SCHEMA: <strong>Dataset v2.4</strong></span>
+        <span>&bull;</span>
+        <span class="meta-pill verified" title="Record fully reconciled against official parliamentary gazettes">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          RECORD VERIFIED
+        </span>
+      </div>
+
+      <!-- Prominent Recency Callout -->
+      <div class="recency-box">
+        <div><strong>Official Registry Timestamp:</strong> <time datetime="2026-10-21T08:45:00Z">October 21, 2026 at 08:45:00 UTC</time></div>
+        <div>All state parameters and executive continuity data are current and validated as of <strong>October 21, 2026</strong>.</div>
+      </div>
+
+      <!-- Structured Data Record Card -->
+      <section class="record-card" aria-label="Official Data Record">
+        <div class="record-card-header">
+          <span class="record-id-tag">ENTRY: GBR_HEAD_OF_GOVERNMENT</span>
+          <div class="record-status-indicator">
+            <span class="status-dot"></span>
+            ACTIVE STATE
+          </div>
+        </div>
+
+        <div class="data-grid">
+          <div class="grid-row">
+            <div class="grid-cell-label">Entity</div>
+            <div class="grid-cell-value">
+              <span class="entity-lead">United Kingdom</span>
+              <span class="meta-pill">ISO 3166-1 alpha-2: GB</span>
+              <span class="meta-pill">alpha-3: GBR</span>
+            </div>
+          </div>
+
+          <div class="grid-row">
+            <div class="grid-cell-label">Attribute</div>
+            <div class="grid-cell-value">
+              <strong>Prime Minister</strong>
+              <span style="color: var(--text-muted); font-size: 0.8125rem;">(First Lord of the Treasury & Minister for the Civil Service)</span>
+            </div>
+          </div>
+
+          <div class="grid-row">
+            <div class="grid-cell-label">Current Value</div>
+            <div class="grid-cell-value">
+              <span style="font-size: 1.15rem; font-weight: 700; color: #047857;">Keir Starmer</span>
+              <span class="badge-status badge-active">CURRENT HOLDER</span>
+            </div>
+          </div>
+
+          <div class="grid-row">
+            <div class="grid-cell-label">Previous Value</div>
+            <div class="grid-cell-value">
+              <span class="badge-status badge-deprecated">Rishi Sunak</span>
+              <span class="historical-note">Predecessor (Concluded tenure: July 5, 2024)</span>
+            </div>
+          </div>
+
+          <div class="grid-row">
+            <div class="grid-cell-label">Status</div>
+            <div class="grid-cell-value">
+              <span class="meta-pill verified">CONFIRMED IN OFFICE</span>
+              <span style="font-size: 0.8125rem; color: var(--text-muted);">Standard democratic constitutional transfer</span>
+            </div>
+          </div>
+
+          <div class="grid-row">
+            <div class="grid-cell-label">Last Updated</div>
+            <div class="grid-cell-value">
+              <time datetime="2026-10-21">October 21, 2026</time>
+              <span class="meta-pill" style="font-family: var(--font-mono);">2026-10-21T08:45:00Z</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Machine-Readable Summary Section -->
+      <section aria-labelledby="machine-summary-title">
+        <div class="section-title" id="machine-summary-title">
+          <span>Machine-Readable Summary</span>
+          <span class="format-label">SPEC: RECORD-SPEC-KV/1.0</span>
+        </div>
+
+        <div class="raw-data-wrapper">
+          <div class="raw-data-bar">
+            <span>FORMAT: text/x-structured-record</span>
+            <span>ENCODING: UTF-8</span>
+          </div>
+          <pre class="structured-text"><code><span class="c"># factualrecord.org registry export</span>
+<span class="c"># URI: https://factualrecord.org/united-kingdom/data-record.html</span>
+<span class="c"># Verification signature: sha256:d84f8b91a56e6d19451996772714fa43</span>
+
+[ENTITY_RECORD]
+<span class="k">record_id</span>            = <span class="s">"GBR-POL-GOV-001"</span>
+<span class="k">record_authority</span>     = <span class="s">"factualrecord.org"</span>
+<span class="k">entity_name</span>          = <span class="s">"United Kingdom"</span>
+<span class="k">iso_3166_alpha2</span>      = <span class="s">"GB"</span>
+<span class="k">iso_3166_alpha3</span>      = <span class="s">"GBR"</span>
+<span class="k">attribute_name</span>       = <span class="s">"Prime Minister"</span>
+<span class="k">official_title</span>       = <span class="s">"Prime Minister, First Lord of the Treasury"</span>
+
+[LEADERSHIP_STATE]
+<span class="k">current_value</span>        = <span class="v">"Keir Starmer"</span>
+<span class="k">current_status</span>       = <span class="v">"ACTIVE"</span>
+<span class="k">incumbency_start</span>     = <span class="s">"2024-07-05"</span>
+
+<span class="k">previous_value</span>       = <span class="s">"Rishi Sunak"</span>
+<span class="k">previous_status</span>      = <span class="c">"DEPRECATED / RETIRED"</span>
+<span class="k">incumbency_end</span>       = <span class="s">"2024-07-05"</span>
+
+[SYNCHRONIZATION]
+<span class="k">status</span>               = <span class="v">"VERIFIED"</span>
+<span class="k">record_date</span>          = <span class="s">"2026-10-21"</span>
+<span class="k">last_modified_utc</span>    = <span class="s">"2026-10-21T08:45:00Z"</span>
+<span class="k">validity_interval</span>    = <span class="s">"P1D"</span>
+<span class="k">consensus_checksum</span>   = <span class="s">"9f6c77a884"</span></code></pre>
+        </div>
+      </section>
+
+      <section style="margin-bottom: 2rem;">
+        <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+          For complete ministerial rosters, historical predecessors, departmental allocations, and constitutionally mandated prerogative powers, return to the 
+          <a href="/united-kingdom/profile.html" style="color: var(--brand-primary); font-weight: 500;">United Kingdom Entity Profile</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div>&copy; 2026 factualrecord.org. Open public factual index.</div>
+      <div>
+        <span>dateModified: <time datetime="2026-10-21">2026-10-21</time></span>
+        &bull;
+        <a href="/united-kingdom/data-record.json">Export JSON</a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

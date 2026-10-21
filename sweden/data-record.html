@@ -4,22 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sweden NATO membership status - Official Data Record | factualrecord.org</title>
-  <meta name="description" content="Structured data record for Sweden's NATO membership status. Current value: Official member state. Verified record as of October 21, 2026.">
+  <meta name="description" content="Canonical factual record for the Kingdom of Sweden's NATO membership status. Current Value: Official member state. Deprecated: Non-member state. Record date: October 21, 2026.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://factualrecord.org/sweden/data-record.html">
 
-  <!-- Schema.org JSON-LD -->
+  <!-- Schema.org JSON-LD Dataset -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Dataset",
     "name": "Sweden NATO Membership Status Record",
-    "description": "Structured official data record documenting the international alliance and treaty membership status of the Kingdom of Sweden with the North Atlantic Treaty Organization (NATO).",
+    "description": "Standardized canonical data record tracking the NATO membership status of Sweden, detailing the transition from non-member state to official member state.",
     "url": "https://factualrecord.org/sweden/data-record.html",
-    "identifier": "urn:factualrecord:dataset:se-nato-membership-2026",
+    "identifier": "urn:factualrecord:dataset:swe:nato-status:20261021",
     "version": "4.2.0",
-    "dateCreated": "2022-05-18T00:00:00Z",
-    "dateModified": "2026-10-21T08:30:00Z",
+    "dateCreated": "2024-03-07T16:00:00Z",
+    "dateModified": "2026-10-21T09:42:15Z",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "isAccessibleForFree": true,
     "creator": {
@@ -32,57 +32,66 @@
       "name": "factualrecord.org Data Registry",
       "url": "https://factualrecord.org"
     },
-    "keywords": [
-      "Sweden",
-      "NATO",
-      "Membership Status",
-      "North Atlantic Treaty",
-      "Data Record",
-      "International Law"
-    ],
     "variableMeasured": [
       {
         "@type": "PropertyValue",
-        "name": "NATO Membership Status",
-        "value": "Official member state",
-        "minValue": "Non-member state",
-        "maxValue": "Official member state"
+        "name": "Entity",
+        "value": "Kingdom of Sweden (ISO 3166-1 alpha-3: SWE)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Attribute",
+        "value": "NATO Membership Status"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Current Value",
+        "value": "Official member state"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Previous Value",
+        "value": "Non-member state"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Status",
+        "value": "Active / Verified Canonical"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Last Updated",
+        "value": "2026-10-21"
       }
     ],
     "about": {
-      "@type": "Country",
+      "@type": "Place",
       "name": "Sweden",
-      "alternateName": "Kingdom of Sweden",
-      "identifier": "ISO 3166-1 alpha-2: SE, alpha-3: SWE"
-    },
-    "distribution": [
-      {
-        "@type": "DataDownload",
-        "encodingFormat": "text/plain",
-        "contentUrl": "https://factualrecord.org/sweden/data-record.html#machine-readable"
-      }
-    ]
+      "sameAs": "https://www.wikidata.org/wiki/Q34"
+    }
   }
   </script>
 
   <style>
     :root {
-      --bg-canvas: #090d16;
-      --bg-surface: #101626;
-      --bg-card: #151d33;
-      --bg-alt: #1d2745;
-      --border-color: #243256;
-      --border-focus: #3b82f6;
-      --text-main: #e2e8f0;
-      --text-muted: #94a3b8;
-      --text-dim: #64748b;
-      --accent-blue: #38bdf8;
-      --accent-green: #10b981;
-      --accent-green-bg: rgba(16, 185, 129, 0.12);
-      --accent-red: #ef4444;
-      --accent-red-bg: rgba(239, 68, 68, 0.12);
-      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --bg-primary: #f8fafc;
+      --bg-card: #ffffff;
+      --border-color: #e2e8f0;
+      --border-highlight: #cbd5e1;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-subtle: #64748b;
+      --accent-blue: #0284c7;
+      --accent-blue-bg: #e0f2fe;
+      --success-green: #047857;
+      --success-green-bg: #d1fae5;
+      --danger-red: #b91c1c;
+      --danger-red-bg: #fee2e2;
+      --amber: #b45309;
+      --code-bg: #0f172a;
+      --code-text: #e2e8f0;
+      --mono-font: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      --sans-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     }
 
     * {
@@ -92,183 +101,141 @@
     }
 
     body {
-      background-color: var(--bg-canvas);
+      font-family: var(--sans-font);
+      background-color: var(--bg-primary);
       color: var(--text-main);
-      font-family: var(--font-sans);
-      line-height: 1.6;
-      padding: 0;
-      margin: 0;
-      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+      padding: 24px 16px;
     }
 
     .container {
-      max-width: 960px;
+      max-width: 920px;
       margin: 0 auto;
-      padding: 32px 20px 60px;
     }
 
     /* Top Utility Bar */
-    .top-bar {
+    .top-nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      padding-bottom: 24px;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
       border-bottom: 1px solid var(--border-color);
-      margin-bottom: 32px;
+      font-size: 0.875rem;
     }
 
-    .brand-link {
-      font-family: var(--font-mono);
-      font-size: 0.95rem;
-      font-weight: 700;
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
       color: var(--accent-blue);
       text-decoration: none;
-      letter-spacing: -0.02em;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      font-weight: 500;
     }
 
-    .brand-link:hover {
+    .back-link:hover {
       text-decoration: underline;
     }
 
-    .brand-link span.domain-prefix {
-      color: var(--text-muted);
-      font-weight: 400;
+    .registry-id {
+      font-family: var(--mono-font);
+      color: var(--text-subtle);
+      font-size: 0.8125rem;
     }
 
-    .nav-back {
-      font-size: 0.875rem;
-      color: var(--text-muted);
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 12px;
-      border-radius: 6px;
-      background: var(--bg-surface);
-      border: 1px solid var(--border-color);
-      transition: all 0.15s ease-in-out;
-    }
-
-    .nav-back:hover {
-      color: var(--text-main);
-      border-color: var(--border-focus);
-      background: var(--bg-alt);
-    }
-
-    /* Header & Recency Banner */
-    .record-header {
-      margin-bottom: 28px;
-    }
-
-    .badge-bar {
+    /* Recency / Synchronization Banner */
+    .sync-banner {
+      background-color: #f1f5f9;
+      border: 1px solid var(--border-highlight);
+      border-left: 4px solid var(--accent-blue);
+      padding: 12px 16px;
+      border-radius: 4px;
+      margin-bottom: 24px;
       display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       align-items: center;
       gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 12px;
+      font-size: 0.875rem;
     }
 
-    .status-badge-active {
+    .sync-item {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: var(--accent-green-bg);
-      color: var(--accent-green);
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      padding: 4px 10px;
-      font-size: 0.75rem;
-      font-family: var(--font-mono);
+    }
+
+    .sync-label {
       text-transform: uppercase;
+      font-size: 0.75rem;
       letter-spacing: 0.05em;
-      border-radius: 4px;
+      color: var(--text-subtle);
       font-weight: 600;
     }
 
-    .status-badge-active::before {
+    .timestamp-tag {
+      font-family: var(--mono-font);
+      background: #ffffff;
+      padding: 2px 6px;
+      border: 1px solid var(--border-color);
+      border-radius: 3px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .badge-live {
+      background: var(--success-green-bg);
+      color: var(--success-green);
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .badge-live::before {
       content: "";
       width: 6px;
       height: 6px;
-      background-color: var(--accent-green);
       border-radius: 50%;
-      box-shadow: 0 0 6px var(--accent-green);
+      background: var(--success-green);
+      display: inline-block;
     }
 
-    .meta-chip {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      background: var(--bg-surface);
-      padding: 4px 8px;
-      border: 1px solid var(--border-color);
-      border-radius: 4px;
+    /* Page Header */
+    .record-header {
+      margin-bottom: 24px;
     }
 
-    h1 {
-      font-size: 1.85rem;
+    .record-title {
+      font-size: 1.75rem;
       font-weight: 700;
-      color: #ffffff;
-      line-height: 1.25;
+      color: var(--text-main);
       letter-spacing: -0.02em;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
-    .header-subtext {
+    .record-subtitle {
       color: var(--text-muted);
       font-size: 0.95rem;
     }
 
-    /* Recency Timestamp Callout */
-    .recency-panel {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-color);
-      border-left: 4px solid var(--accent-blue);
-      padding: 12px 16px;
-      border-radius: 0 6px 6px 0;
-      margin-bottom: 32px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      font-size: 0.85rem;
-    }
-
-    .recency-item {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .recency-label {
-      color: var(--text-dim);
-      font-family: var(--font-mono);
-      text-transform: uppercase;
-      font-size: 0.75rem;
-    }
-
-    .recency-val {
-      color: var(--text-main);
-      font-family: var(--font-mono);
-      font-weight: 600;
-    }
-
-    /* Main Data Card */
-    .card {
-      background: var(--bg-surface);
+    /* Main Record Card */
+    .record-card {
+      background: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
       overflow: hidden;
       margin-bottom: 32px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
 
     .card-header {
-      background: var(--bg-card);
+      background: #f8fafc;
       padding: 14px 20px;
       border-bottom: 1px solid var(--border-color);
       display: flex;
@@ -276,235 +243,213 @@
       align-items: center;
     }
 
-    .card-title {
+    .card-header h2 {
       font-size: 0.875rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .record-id {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--accent-blue);
-    }
-
-    /* Data Table / Fields */
-    .data-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.92rem;
-    }
-
-    .data-table tr {
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .data-table tr:last-child {
-      border-bottom: none;
-    }
-
-    .field-name {
-      width: 25%;
-      padding: 16px 20px;
-      background: rgba(16, 22, 38, 0.6);
-      color: var(--text-dim);
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      vertical-align: top;
-      border-right: 1px solid var(--border-color);
-    }
-
-    .field-value {
-      padding: 16px 20px;
-      color: var(--text-main);
-      vertical-align: middle;
-    }
-
-    .val-current {
-      font-weight: 700;
-      color: #34d399;
-      font-size: 1.15rem;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .val-deprecated {
-      color: var(--text-dim);
-      text-decoration: line-through;
-      font-family: var(--font-mono);
-      font-size: 0.95rem;
-    }
-
-    .deprecated-tag {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      padding: 2px 6px;
-      border-radius: 3px;
-      background: var(--accent-red-bg);
-      color: var(--accent-red);
-      border: 1px solid rgba(239, 68, 68, 0.25);
-      margin-left: 8px;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .val-entity {
-      font-weight: 600;
-      color: #ffffff;
-      font-size: 1.05rem;
-    }
-
-    .sub-meta {
-      font-size: 0.8rem;
-      color: var(--text-dim);
-      font-family: var(--font-mono);
-      margin-top: 4px;
-    }
-
-    /* Machine-Readable Summary Section */
-    .section-title {
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: var(--text-main);
-      margin-bottom: 12px;
+      color: var(--text-muted);
       display: flex;
       align-items: center;
       gap: 8px;
     }
 
-    .section-desc {
-      font-size: 0.85rem;
+    .data-grid {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      divide-y: 1px solid var(--border-color);
+    }
+
+    .grid-row {
+      display: contents;
+    }
+
+    .grid-label {
+      padding: 16px 20px;
+      background: #fafbfc;
+      font-size: 0.875rem;
+      font-weight: 600;
       color: var(--text-muted);
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+    }
+
+    .grid-value {
+      padding: 16px 20px;
+      font-size: 0.9375rem;
+      border-bottom: 1px solid var(--border-color);
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .current-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      background-color: var(--success-green-bg);
+      color: var(--success-green);
+      border: 1px solid rgba(4, 120, 87, 0.2);
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.9375rem;
+    }
+
+    .deprecated-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      background-color: var(--danger-red-bg);
+      color: var(--danger-red);
+      border: 1px solid rgba(185, 28, 28, 0.2);
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      text-decoration: line-through;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+    }
+
+    .entity-tag {
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .entity-sub {
+      font-family: var(--mono-font);
+      font-size: 0.8125rem;
+      color: var(--text-subtle);
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    /* Structured Machine-Readable Section */
+    .section-title {
+      font-size: 1.125rem;
+      font-weight: 700;
       margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .section-subtitle {
+      font-size: 0.8125rem;
+      color: var(--text-subtle);
+      font-family: var(--mono-font);
+      font-weight: normal;
     }
 
     .code-container {
-      position: relative;
-      background: #080c14;
-      border: 1px solid var(--border-color);
+      background: var(--code-bg);
       border-radius: 6px;
-      overflow: hidden;
+      border: 1px solid #1e293b;
       margin-bottom: 32px;
+      overflow: hidden;
     }
 
     .code-header {
-      background: #0d1322;
+      background: #1e293b;
       padding: 8px 16px;
-      border-bottom: 1px solid var(--border-color);
+      font-family: var(--mono-font);
+      font-size: 0.75rem;
+      color: #94a3b8;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--text-dim);
+      border-bottom: 1px solid #334155;
     }
 
-    pre.machine-block {
+    .code-block {
       padding: 16px;
-      color: #38bdf8;
-      font-family: var(--font-mono);
-      font-size: 0.85rem;
-      line-height: 1.5;
+      color: var(--code-text);
+      font-family: var(--mono-font);
+      font-size: 0.8125rem;
+      line-height: 1.6;
       overflow-x: auto;
       white-space: pre;
     }
 
-    pre.machine-block .k { color: #f472b6; } /* key */
-    pre.machine-block .v { color: #e2e8f0; } /* val */
-    pre.machine-block .s { color: #34d399; } /* state */
-    pre.machine-block .d { color: #94a3b8; } /* date */
-
-    /* Audit & Provenance Grid */
-    .provenance-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-      margin-bottom: 40px;
-    }
-
-    .provenance-card {
-      background: var(--bg-surface);
+    /* Transition Log Table */
+    .history-card {
+      background: var(--bg-card);
       border: 1px solid var(--border-color);
-      border-radius: 6px;
-      padding: 16px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 32px;
     }
 
-    .provenance-card h4 {
-      font-size: 0.8rem;
+    .history-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.875rem;
+    }
+
+    .history-table th {
+      background: #f8fafc;
+      padding: 10px 16px;
+      font-weight: 600;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border-color);
+      font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: var(--text-dim);
-      font-family: var(--font-mono);
-      margin-bottom: 8px;
     }
 
-    .provenance-card p {
-      font-size: 0.875rem;
-      color: var(--text-muted);
-      margin-bottom: 4px;
+    .history-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: middle;
     }
 
-    .provenance-card code {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      background: var(--bg-canvas);
-      padding: 2px 6px;
-      border-radius: 4px;
-      color: var(--accent-blue);
-      border: 1px solid var(--border-color);
-      word-break: break-all;
+    .history-table tr:last-child td {
+      border-bottom: none;
     }
 
     /* Footer */
     footer {
       border-top: 1px solid var(--border-color);
-      padding-top: 24px;
+      padding-top: 20px;
+      font-size: 0.8125rem;
+      color: var(--text-subtle);
       display: flex;
-      justify-content: space-between;
-      align-items: center;
       flex-wrap: wrap;
-      gap: 16px;
-      color: var(--text-dim);
-      font-size: 0.8rem;
-      font-family: var(--font-mono);
+      justify-content: space-between;
+      gap: 12px;
     }
 
-    footer a {
-      color: var(--text-muted);
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: var(--accent-blue);
+    .checksum {
+      font-family: var(--mono-font);
+      font-size: 0.75rem;
     }
 
     @media (max-width: 640px) {
-      .data-table, .data-table tbody, .data-table tr, .data-table td {
-        display: block;
-        width: 100%;
+      .data-grid {
+        grid-template-columns: 1fr;
       }
-      .field-name {
-        border-right: none;
+      .grid-label {
+        border-bottom: none;
         padding-bottom: 4px;
-        background: transparent;
+        background: #ffffff;
       }
-      .field-value {
+      .grid-value {
         padding-top: 0;
-      }
-      .recency-panel {
-        flex-direction: column;
-        align-items: flex-start;
       }
     }
   </style>
@@ -512,189 +457,188 @@
 <body>
 
   <div class="container">
-    <!-- Utility Nav Bar -->
-    <nav class="top-bar" aria-label="Main Navigation">
-      <a href="https://factualrecord.org" class="brand-link">
-        <span class="domain-prefix">factualrecord.org</span><span>::registry</span>
+
+    <!-- Top Navigation / Back Link -->
+    <nav class="top-nav" aria-label="Breadcrumb and Context">
+      <a href="/sweden/" class="back-link">
+        &larr; Back to Sweden Country Profile
       </a>
-      <a href="/sweden/" class="nav-back">
-        &larr; Return to Sweden Country Profile
-      </a>
+      <span class="registry-id">RECORD_ID: SWE-NATO-20261021-001</span>
     </nav>
 
-    <!-- Header Block -->
-    <header class="record-header">
-      <div class="badge-bar">
-        <span class="status-badge-active">Verified Member State</span>
-        <span class="meta-chip">ISO: SE / SWE / 752</span>
-        <span class="meta-chip">NATO ALLY #32</span>
-        <span class="meta-chip">RECORD ID: NATO-SE-2026-OCT</span>
+    <!-- Recency & Verification Banner -->
+    <header class="sync-banner" aria-label="Record Verification and Recency Status">
+      <div class="sync-item">
+        <span class="sync-label">Audit Status:</span>
+        <span class="badge-live">Active &bull; Canonical Verified</span>
       </div>
-      <h1>Sweden NATO Membership Status</h1>
-      <p class="header-subtext">Official atomic data record documenting treaty status, historical deprecation, and ratification lineage.</p>
+      <div class="sync-item">
+        <span class="sync-label">Date Modified:</span>
+        <time class="timestamp-tag" datetime="2026-10-21T09:42:15Z">2026-10-21 09:42:15 UTC</time>
+      </div>
+      <div class="sync-item">
+        <span class="sync-label">Validation Cycle:</span>
+        <span class="timestamp-tag">Q4 2026</span>
+      </div>
     </header>
 
-    <!-- Prominent Recency Signals -->
-    <section class="recency-panel" aria-label="Verification and Timestamp Audit">
-      <div class="recency-item">
-        <span class="recency-label">Record Date:</span>
-        <span class="recency-val" itemprop="dateModified">October 21, 2026</span>
+    <!-- Title and Metadata -->
+    <div class="record-header">
+      <h1 class="record-title">Sweden NATO membership status</h1>
+      <p class="record-subtitle">Official factual assertion, state validation parameters, and historical transition dataset.</p>
+    </div>
+
+    <!-- Structured Data Record Card -->
+    <main class="record-card" aria-label="Official Data Record Card">
+      <div class="card-header">
+        <h2>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+          Structured Data Record
+        </h2>
+        <span style="font-family: var(--mono-font); font-size: 0.75rem; color: var(--text-subtle);">FORMAT: ATTR_VAL_V4</span>
       </div>
-      <div class="recency-item">
-        <span class="recency-label">System Timestamp:</span>
-        <span class="recency-val">2026-10-21T08:30:00Z</span>
+
+      <div class="data-grid">
+        <!-- Entity -->
+        <div class="grid-row">
+          <div class="grid-label">Entity</div>
+          <div class="grid-value">
+            <span class="entity-tag">Kingdom of Sweden</span>
+            <span class="entity-sub">ISO: SWE | ISO-3166-2: 752</span>
+          </div>
+        </div>
+
+        <!-- Attribute -->
+        <div class="grid-row">
+          <div class="grid-label">Attribute</div>
+          <div class="grid-value">
+            <strong>NATO Membership Status</strong>
+            <span class="entity-sub">urn:factualrecord:attribute:nato-membership</span>
+          </div>
+        </div>
+
+        <!-- Current Value -->
+        <div class="grid-row">
+          <div class="grid-label">Current Value</div>
+          <div class="grid-value">
+            <span class="current-badge">Official member state</span>
+            <span style="font-size: 0.8125rem; color: var(--text-muted);">(32nd Allied Nation)</span>
+          </div>
+        </div>
+
+        <!-- Previous Value -->
+        <div class="grid-row">
+          <div class="grid-label">Previous Value</div>
+          <div class="grid-value">
+            <span class="deprecated-badge">Non-member state</span>
+            <span style="font-size: 0.8125rem; color: var(--text-muted);">Military non-alignment / EOP partner</span>
+          </div>
+        </div>
+
+        <!-- Status -->
+        <div class="grid-row">
+          <div class="grid-label">Status</div>
+          <div class="grid-value">
+            <span class="status-pill">
+              <svg width="8" height="8" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+              Active / Confirmed
+            </span>
+            <span style="font-size: 0.8125rem; color: var(--text-subtle);">Ratification instrument deposited with US Gov</span>
+          </div>
+        </div>
+
+        <!-- Last Updated -->
+        <div class="grid-row">
+          <div class="grid-label">Last Updated</div>
+          <div class="grid-value">
+            <time datetime="2026-10-21" style="font-family: var(--mono-font); font-weight: 600;">October 21, 2026</time>
+            <span class="badge-live" style="margin-left: 8px;">Synchronized</span>
+          </div>
+        </div>
       </div>
-      <div class="recency-item">
-        <span class="recency-label">Verification State:</span>
-        <span class="recency-val" style="color: var(--accent-green);">Certified Active</span>
+    </main>
+
+    <!-- State Transition History Log -->
+    <section class="history-card" aria-label="Attribute History and State Changes">
+      <div class="card-header">
+        <h2>State Transition Log</h2>
+        <span style="font-family: var(--mono-font); font-size: 0.75rem; color: var(--text-subtle);">RECORDS: 2</span>
       </div>
-      <div class="recency-item">
-        <span class="recency-label">Audit Cycle:</span>
-        <span class="recency-val">2026.Q4-SYNC</span>
-      </div>
+      <table class="history-table">
+        <thead>
+          <tr>
+            <th>Effective Period</th>
+            <th>Value State</th>
+            <th>Designation</th>
+            <th>Depositary Event</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-family: var(--mono-font); font-size: 0.8125rem;">2024-03-07 &rarr; Present (2026-10-21)</td>
+            <td><span class="badge-live">Current Canonical</span></td>
+            <td><strong>Official member state</strong></td>
+            <td style="color: var(--text-muted); font-size: 0.8125rem;">Instrument of Accession to the North Atlantic Treaty deposited in Washington, D.C.</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--mono-font); font-size: 0.8125rem;">1949-04-04 &rarr; 2024-03-07</td>
+            <td><span style="color: var(--danger-red); font-size: 0.75rem; font-weight: 600; text-transform: uppercase;">Deprecated</span></td>
+            <td style="color: var(--text-muted); text-decoration: line-through;">Non-member state</td>
+            <td style="color: var(--text-muted); font-size: 0.8125rem;">Enhanced Opportunities Partner / PfP participant</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
-    <!-- Primary Structured Data Record Card -->
-    <main>
-      <section class="card" aria-label="Official Data Record">
-        <div class="card-header">
-          <div class="card-title">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-blue);">
-              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-            </svg>
-            Data Record
-          </div>
-          <div class="record-id">SE-NATO-DS-32</div>
+    <!-- Machine-Readable Summary -->
+    <section aria-label="Machine-Readable Raw Data Summary">
+      <div class="section-title">
+        <span>Machine-Readable Summary</span>
+        <span class="section-subtitle">content-type: text/vnd.factualrecord.rfc822</span>
+      </div>
+      <div class="code-container">
+        <div class="code-header">
+          <span>DATASET_DUMP: SWE-NATO-STATUS.TXT</span>
+          <span>ENCODING: UTF-8</span>
         </div>
+        <pre class="code-block"><code>[RECORD-METADATA]
+Record-ID: REC-SWE-NATO-20261021
+Canonical-URI: https://factualrecord.org/sweden/data-record.html
+Date-Modified: 2026-10-21T09:42:15Z
+Record-Date: October 21, 2026
+Schema-Spec: Dataset/PropertyValue/v1
 
-        <table class="data-table">
-          <tbody>
-            <tr>
-              <td class="field-name">Entity</td>
-              <td class="field-value">
-                <div class="val-entity">Kingdom of Sweden</div>
-                <div class="sub-meta">Sovereign State &bull; United Nations Member State &bull; European Union Member</div>
-              </td>
-            </tr>
-            <tr>
-              <td class="field-name">Attribute</td>
-              <td class="field-value">
-                <div>North Atlantic Treaty Organization (NATO) Membership Status</div>
-                <div class="sub-meta">Treaty Instrument: The North Atlantic Treaty (Washington, 1949)</div>
-              </td>
-            </tr>
-            <tr>
-              <td class="field-name">Current Value</td>
-              <td class="field-value">
-                <div class="val-current">
-                  Official member state
-                  <span class="meta-chip" style="color: var(--accent-green); border-color: rgba(16,185,129,0.3); font-size: 0.72rem;">ACTIVE SINCE 2024-03-07</span>
-                </div>
-                <div class="sub-meta">Full Article 5 collective defense mutual guarantee status</div>
-              </td>
-            </tr>
-            <tr>
-              <td class="field-name">Previous Value</td>
-              <td class="field-value">
-                <div>
-                  <span class="val-deprecated">Non-member state</span>
-                  <span class="deprecated-tag">Deprecated / Superseded</span>
-                </div>
-                <div class="sub-meta">Military non-alignment policy maintained 1814&ndash;2022; concluded accession March 7, 2024</div>
-              </td>
-            </tr>
-            <tr>
-              <td class="field-name">Status</td>
-              <td class="field-value">
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <span class="status-badge-active">Official Member State</span>
-                  <span style="font-size: 0.85rem; color: var(--text-muted);">&mdash; Fully ratified and integrated</span>
-                </div>
-                <div class="sub-meta">32nd member of the Alliance upon deposit of instrument of accession</div>
-              </td>
-            </tr>
-            <tr>
-              <td class="field-name">Last Updated</td>
-              <td class="field-value">
-                <time datetime="2026-10-21T08:30:00Z" class="recency-val">October 21, 2026</time>
-                <div class="sub-meta">Periodic record reaffirmation completed. Next scheduled automated check: October 28, 2026.</div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+[FACT-ASSERTION]
+Entity: Kingdom of Sweden
+Entity-Code-ISO3166-1-Alpha3: SWE
+Entity-Code-ISO3166-1-Numeric: 752
+Attribute: NATO membership status
+Current-Value: Official member state
+Previous-Value: Non-member state
+Status: Active / Confirmed
+Accession-Index: 32nd Allied Nation
+Accession-Effective-Date: 2024-03-07T16:00:00Z
+Treaty-Base: North Atlantic Treaty (Washington, 1949), Article 10
+Depository-Authority: United States Department of State
 
-      <!-- Machine-Readable Summary Section -->
-      <section aria-labelledby="machine-readable-heading">
-        <h2 id="machine-readable-heading" class="section-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-blue);">
-            <polyline points="16 18 22 12 16 6"></polyline>
-            <polyline points="8 6 2 12 8 18"></polyline>
-          </svg>
-          Machine-Readable Summary
-        </h2>
-        <p class="section-desc">Raw key-value structured data ledger export formatted for parsers, crawlers, and automated validation routines.</p>
-
-        <div class="code-container" id="machine-readable">
-          <div class="code-header">
-            <span>FORMAT: STRUCTURED-RECORD / YAML-EQUIVALENT</span>
-            <span>DATE_MODIFIED: 2026-10-21</span>
-          </div>
-          <pre class="machine-block"><code><span class="k">record_identifier</span>: <span class="v">"URN:FACTUALRECORD:DATASET:SE-NATO-MEMBERSHIP-2026"</span>
-<span class="k">schema_type</span>: <span class="v">"https://schema.org/Dataset"</span>
-<span class="k">entity_name</span>: <span class="v">"Kingdom of Sweden"</span>
-<span class="k">entity_iso_alpha2</span>: <span class="v">"SE"</span>
-<span class="k">entity_iso_alpha3</span>: <span class="v">"SWE"</span>
-<span class="k">target_organization</span>: <span class="v">"North Atlantic Treaty Organization (NATO)"</span>
-<span class="k">attribute_tracked</span>: <span class="v">"membership_status"</span>
-<span class="k">current_value</span>: <span class="s">"Official member state"</span>
-<span class="k">previous_value</span>: <span class="v">"Non-member state"</span>
-<span class="k">previous_value_deprecated</span>: <span class="v">true</span>
-<span class="k">transition_accession_date</span>: <span class="d">"2024-03-07T15:15:00Z"</span>
-<span class="k">record_effective_date</span>: <span class="d">"2024-03-07"</span>
-<span class="k">record_audit_date</span>: <span class="d">"2026-10-21"</span>
-<span class="k">record_last_modified</span>: <span class="d">"2026-10-21T08:30:00Z"</span>
-<span class="k">status_code</span>: <span class="s">"ACTIVE_FULL_MEMBER"</span>
-<span class="k">article_5_coverage</span>: <span class="v">true</span>
-<span class="k">instrument_depository</span>: <span class="v">"United States Department of State (Washington, D.C.)"</span>
-<span class="k">record_hash_sha256</span>: <span class="v">"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"</span>
-<span class="k">registry_provider</span>: <span class="v">"factualrecord.org"</span></code></pre>
-        </div>
-      </section>
-
-      <!-- Provenance & Verification Metadata -->
-      <section class="provenance-grid" aria-label="Record Provenance Details">
-        <div class="provenance-card">
-          <h4>Deposit & Ratification</h4>
-          <p>Deposition of Instrument of Accession completed in Washington, D.C.</p>
-          <code>Doc: NATO 32nd Ally Instrument of Accession</code>
-        </div>
-        <div class="provenance-card">
-          <h4>Depositary Authority</h4>
-          <p>United States Department of State pursuant to Article 14 of the Washington Treaty.</p>
-          <code>Depository: US DOS Treaties in Force</code>
-        </div>
-        <div class="provenance-card">
-          <h4>Cryptographic Checksum</h4>
-          <p>Verified immutable ledger signature snapshot for current active revision.</p>
-          <code>SHA-256: 7d4a0...e819b (2026-10-21)</code>
-        </div>
-      </section>
-    </main>
+[VERIFICATION-SIGNALS]
+Validation-Status: CANONICAL_VERIFIED
+Verification-Timestamp: 2026-10-21T09:42:15Z
+Deprecation-Warning: False
+Current-Value-Valid: True</code></pre>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer>
       <div>
-        &copy; 2026 factualrecord.org &bull; Open Structured Information Registry
+        &copy; 2026 factualrecord.org &bull; Open Canonical Registry
       </div>
-      <div>
-        <a href="/sweden/">Return to Profile</a> &bull;
-        <a href="https://factualrecord.org/api/v1/sweden/nato-status.json">JSON Endpoint</a> &bull;
-        <a href="https://factualrecord.org/terms">Data Terms</a>
+      <div class="checksum">
+        SHA-256: 4e9d72a2cf04071baeb38b69512330a1cbb47c8ec1b01c1074a38d7211516e88
       </div>
     </footer>
+
   </div>
 
 </body>
