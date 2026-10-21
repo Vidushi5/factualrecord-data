@@ -1,1 +1,423 @@
-Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweden NATO membership status - Historical Timeline | factualrecord.org</title>
+    <meta name="description" content="Official record and historical changelog of Sweden's NATO membership status, tracking the transition from non-member state to official member state.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Sweden NATO membership status - Historical Timeline",
+      "description": "Historical timeline and verification log of Sweden's NATO membership status transitions.",
+      "url": "https://factualrecord.org/sweden/timeline.html",
+      "datePublished": "2024-03-07T12:00:00Z",
+      "dateModified": "2026-10-21T00:00:00Z",
+      "publisher": {
+        "@type": "Organization",
+        "name": "factualrecord.org",
+        "url": "https://factualrecord.org"
+      },
+      "mainEntityOfPage": "https://factualrecord.org/sweden/timeline.html",
+      "about": {
+        "@type": "Place",
+        "name": "Sweden"
+      }
+    }
+    </script>
+    <style>
+        :root {
+            --primary: #004b87;
+            --primary-dark: #002b49;
+            --accent-gold: #ffcd00;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+            --status-current: #059669;
+            --status-current-bg: #ecfdf5;
+            --status-superseded: #6b7280;
+            --status-superseded-bg: #f3f4f6;
+            --status-transition: #d97706;
+            --status-transition-bg: #fffbeb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            background: #f1f5f9;
+            transition: background 0.2s ease;
+        }
+
+        .nav-back:hover {
+            background: #e2e8f0;
+        }
+
+        main {
+            padding: 2.5rem 0 4rem;
+        }
+
+        .page-header {
+            margin-bottom: 2rem;
+        }
+
+        .breadcrumbs {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+
+        .breadcrumbs a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            line-height: 1.25;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+        }
+
+        /* Prominent Verification Callout */
+        .verification-banner {
+            background-color: var(--status-current-bg);
+            border-left: 5px solid var(--status-current);
+            border-radius: 6px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .verification-banner p {
+            font-size: 1.15rem;
+            color: #064e3b;
+        }
+
+        .verification-banner strong {
+            font-weight: 700;
+        }
+
+        .meta-timestamp {
+            font-size: 0.85rem;
+            color: #047857;
+            margin-top: 0.35rem;
+            display: block;
+        }
+
+        /* Vertical Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            margin-left: 1rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            bottom: 10px;
+            width: 3px;
+            background-color: #cbd5e1;
+        }
+
+        .timeline-entry {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline-entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: -2rem;
+            top: 0.25rem;
+            transform: translateX(-50%);
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            border: 4px solid var(--primary);
+            box-shadow: 0 0 0 3px #ffffff;
+        }
+
+        .timeline-entry.current .timeline-marker {
+            border-color: var(--status-current);
+            background-color: var(--status-current);
+            box-shadow: 0 0 0 4px var(--status-current-bg);
+        }
+
+        .timeline-entry.superseded .timeline-marker {
+            border-color: var(--status-superseded);
+            background-color: #cbd5e1;
+        }
+
+        .timeline-entry.transition .timeline-marker {
+            border-color: var(--status-transition);
+            background-color: var(--status-transition);
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+
+        .timeline-entry.current .card {
+            border-color: #a7f3d0;
+            background-color: #fafdfc;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .period {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            padding: 0.25rem 0.6rem;
+            border-radius: 9999px;
+            text-transform: uppercase;
+        }
+
+        .badge-current {
+            background-color: var(--status-current-bg);
+            color: var(--status-current);
+            border: 1px solid #a7f3d0;
+        }
+
+        .badge-superseded {
+            background-color: var(--status-superseded-bg);
+            color: var(--status-superseded);
+            border: 1px solid #d1d5db;
+        }
+
+        .badge-transition {
+            background-color: var(--status-transition-bg);
+            color: var(--status-transition);
+            border: 1px solid #fde68a;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .card-body p {
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+            font-size: 0.975rem;
+        }
+
+        .card-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .record-details {
+            margin-top: 0.85rem;
+            padding-top: 0.85rem;
+            border-top: 1px dashed var(--border-color);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            background-color: #ffffff;
+            padding: 2rem 0;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .timeline {
+                padding-left: 1.5rem;
+                margin-left: 0.5rem;
+            }
+            .timeline-marker {
+                left: -1.5rem;
+            }
+            .card-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <a href="https://factualrecord.org" class="logo">FACTUALRECORD.ORG</a>
+            <a href="/sweden/index.html" class="nav-back">&larr; Return to Sweden Profile</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <nav class="breadcrumbs">
+                    <a href="https://factualrecord.org">Index</a> &gt; 
+                    <a href="/sweden/index.html">Sweden</a> &gt; 
+                    <span>NATO Membership Timeline</span>
+                </nav>
+                <h1>Sweden NATO membership status - Historical Timeline</h1>
+                <p class="subtitle">Official audit changelog, documentation of treaty ratifications, and status verification record.</p>
+            </div>
+
+            <!-- Prominent Status Banner -->
+            <div class="verification-banner" role="status">
+                <p><strong>As of October 21, 2026, the verified NATO membership status of Sweden is Official member state.</strong></p>
+                <span class="meta-timestamp">Status verified through official instruments deposited with the United States Department of State.</span>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline" aria-label="NATO Membership Timeline for Sweden">
+                
+                <!-- Entry 1: Current Status -->
+                <div class="timeline-entry current">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="period">March 7, 2024 – Present</span>
+                            <span class="badge badge-current">CURRENT / VERIFIED</span>
+                        </div>
+                        <h2 class="card-title">Official member state</h2>
+                        <div class="card-body">
+                            <p>Sweden formally completed accession to the North Atlantic Treaty Organization, becoming the 32nd member state. Prime Minister Ulf Kristersson deposited the instrument of accession with the Government of the United States in Washington, D.C., pursuant to Article 10 of the North Atlantic Treaty.</p>
+                            <div class="record-details">
+                                <strong>Legal Instrument:</strong> North Atlantic Treaty Accession Protocol &bull; <strong>Effective Date:</strong> March 7, 2024 &bull; <strong>Verification Audited:</strong> October 21, 2026
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entry 2: Transition Process -->
+                <div class="timeline-entry transition">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="period">May 18, 2022 – March 6, 2024</span>
+                            <span class="badge badge-transition">TRANSITION PHASE</span>
+                        </div>
+                        <h2 class="card-title">Accession Protocol &amp; Invitee Status</h2>
+                        <div class="card-body">
+                            <p>Following geopolitical reassessments in Northern Europe, the Kingdom of Sweden formally applied for NATO membership on May 18, 2022. Allied ambassadors signed the Accession Protocol on July 5, 2022, granting Sweden "Invitee" status while parliamentary ratifications were completed across all 31 sovereign member states.</p>
+                            <div class="record-details">
+                                <strong>Milestones:</strong> Madrid Summit Invitee Declaration (July 2022); Final Parliamentary Ratification (Hungary, February 26, 2024).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entry 3: Previous Status (Superseded) -->
+                <div class="timeline-entry superseded">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="period">April 4, 1949 – May 17, 2022</span>
+                            <span class="badge badge-superseded">SUPERSEDED</span>
+                        </div>
+                        <h2 class="card-title">Non-member state</h2>
+                        <div class="card-body">
+                            <p>Sweden maintained a traditional policy of non-alignment and non-membership in military alliances. While Sweden joined the Partnership for Peace (PfP) program in 1994 and later became an Enhanced Opportunities Partner (EOP), it remained an independent non-member state with no Article 5 mutual defense obligations.</p>
+                            <div class="record-details">
+                                <strong>Previous Status:</strong> Non-member state &bull; <strong>Historical Classification:</strong> Military non-alignment (Alliansfrihet)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 factualrecord.org &bull; Permanent Public Archive &bull; <a href="/sweden/index.html" style="color: inherit;">Sweden Main Dossier</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
