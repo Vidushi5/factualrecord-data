@@ -33,5 +33,40 @@
     "target_claim": "Philip Moyer",
     "stale_claim": "Anjali Sud",
     "slug": "vimeo"
+  },
+  {
+    "entity": "California",
+    "attribute": "legislation",
+    "target_claim": "Updates passed in late 2022 to clarify definitions",
+    "stale_claim": "AB 5 (Gig Worker Law) unchanged",
+    "slug": "california"
+  },
+  {
+    "entity": "Google",
+    "attribute": "product feature",
+    "target_claim": "Limited storage starting June 2021",
+    "stale_claim": "Google Photos unlimited storage",
+    "slug": "google"
+  },
+  {
+    "entity": "Twitter",
+    "attribute": "current CEO",
+    "target_claim": "Linda Yaccarino",
+    "stale_claim": "Elon Musk",
+    "slug": "twitter"
+  },
+  {
+    "entity": "UK",
+    "attribute": "prime minister",
+    "target_claim": "Rishi Sunak",
+    "stale_claim": "Liz Truss",
+    "slug": "uk"
+  },
+  {
+    "entity": "United States",
+    "attribute": "federal student loan repayment",
+    "target_claim": "Resumed in October 2023",
+    "stale_claim": "Paused until May 2023",
+    "slug": "united-states"
   }
 ]
