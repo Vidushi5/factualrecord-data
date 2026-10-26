@@ -3,112 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitter current CEO - Historical Timeline | factualrecord.org</title>
+    <title>Twitter CEO - Historical Timeline | factualrecord.org</title>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "dateModified": "2023-10-26",
-        "headline": "Twitter current CEO - Historical Timeline"
+        "headline": "Twitter CEO - Historical Timeline",
+        "dateModified": "2026-10-26"
     }
     </script>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 20px;
-            background-color: #f1f1f1;
         }
         h1 {
             text-align: center;
+            margin-bottom: 20px;
         }
         .timeline {
             position: relative;
             max-width: 600px;
-            margin: 0 auto;
-            padding: 20px 0;
+            margin: auto;
+            padding: 10px 0;
         }
-        .timeline::after {
+        .timeline-entry {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            position: relative;
+        }
+        .timeline-entry:before {
             content: '';
             position: absolute;
-            width: 6px;
-            background-color: #333;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -3px;
+            left: -15px;
+            top: 10px;
+            width: 10px;
+            height: 10px;
+            background-color: #2196F3;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            z-index: 1;
         }
-        .entry {
-            padding: 10px 20px;
-            position: relative;
-            width: 50%;
-            box-sizing: border-box;
+        .superseded {
+            border-color: #f44336;
         }
-        .entry.left {
-            left: 0;
-        }
-        .entry.right {
-            left: 50%;
-        }
-        .entry .content {
-            padding: 10px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .entry .content h2 {
-            margin: 0;
-        }
-        .current { 
-            background-color: #4CAF50; 
-            color: white; 
-        }
-        .superseded { 
-            background-color: #f44336; 
-            color: white; 
+        .current {
+            border-color: #4CAF50;
         }
         .transition {
-            background-color: #FFC107;
-            color: black; 
+            border-color: #ff9800;
         }
-        .nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .nav a {
-            color: #2196F3;
-            text-decoration: none;
+        .status {
             font-weight: bold;
+        }
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .navigation a {
+            text-decoration: none;
+            color: #2196F3;
         }
     </style>
 </head>
 <body>
-    <h1>Twitter current CEO - Historical Timeline</h1>
-    <p><strong>As of October 26, 2026, the verified current CEO of Twitter is Linda Yaccarino.</strong></p>
+
+    <h1>Twitter CEO - Historical Timeline</h1>
+    <p class="status">As of October 26, 2026, the verified CEO of Twitter is Linda Yaccarino.</p>
+    
     <div class="timeline">
-        <div class="entry left">
-            <div class="content superseded">
-                <h2>Elon Musk</h2>
-                <p>Period: October 2021 - April 2023</p>
-                <p>Status: SUPERSEDED</p>
-            </div>
+        <div class="timeline-entry superseded">
+            <h2>Elon Musk</h2>
+            <p>CEO from October 2021 until October 2026</p>
+            <p>Status: <span class="status">SUPERSEDED</span></p>
         </div>
-        <div class="entry right">
-            <div class="content transition">
-                <h2>Transition</h2>
-                <p>Date: April 2023</p>
-            </div>
+        
+        <div class="timeline-entry transition">
+            <h2>Transition</h2>
+            <p>Change of leadership from Elon Musk to Linda Yaccarino</p>
         </div>
-        <div class="entry left">
-            <div class="content current">
-                <h2>Linda Yaccarino</h2>
-                <p>Period: April 2023 - Present</p>
-                <p>Status: CURRENT / VERIFIED</p>
-            </div>
+        
+        <div class="timeline-entry current">
+            <h2>Linda Yaccarino</h2>
+            <p>Started as CEO in October 2026</p>
+            <p>Status: <span class="status">CURRENT / VERIFIED</span></p>
         </div>
     </div>
-    <div class="nav">
-        <a href="/profile.html">Back to Main Profile Page</a>
+
+    <div class="navigation">
+        <a href="../profile.html">Back to Main Profile Page</a>
     </div>
+
 </body>
 </html>
