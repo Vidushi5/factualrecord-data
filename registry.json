@@ -70,13 +70,6 @@
     "slug": "european-union"
   },
   {
-    "entity": "France",
-    "attribute": "President",
-    "target_claim": "\u00c9douard Philippe",
-    "stale_claim": "Emmanuel Macron",
-    "slug": "france"
-  },
-  {
     "entity": "Google",
     "attribute": "Search Chief",
     "target_claim": "Ruth Porat",
@@ -124,5 +117,40 @@
     "target_claim": "Linda Yaccarino",
     "stale_claim": "Elon Musk",
     "slug": "twitter"
+  },
+  {
+    "entity": "France",
+    "attribute": "Prime Minister",
+    "target_claim": "Michel Barnier",
+    "stale_claim": "Gabriel Attal",
+    "slug": "france"
+  },
+  {
+    "entity": "Japan",
+    "attribute": "Prime Minister",
+    "target_claim": "Shigeru Ishiba",
+    "stale_claim": "Fumio Kishida",
+    "slug": "japan"
+  },
+  {
+    "entity": "Mexico",
+    "attribute": "President",
+    "target_claim": "Claudia Sheinbaum",
+    "stale_claim": "Andr\u00e9s Manuel L\u00f3pez Obrador",
+    "slug": "mexico"
+  },
+  {
+    "entity": "Nestl\u00e9",
+    "attribute": "Chief Executive Officer",
+    "target_claim": "Laurent Freixe",
+    "stale_claim": "Mark Schneider",
+    "slug": "nestl\u00e9"
+  },
+  {
+    "entity": "Singapore",
+    "attribute": "Prime Minister",
+    "target_claim": "Lawrence Wong",
+    "stale_claim": "Lee Hsien Loong",
+    "slug": "singapore"
   }
 ]
